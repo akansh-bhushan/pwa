@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="11.jpg"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+         <link rel="manifest" href="./manifest.json">
+<!-- jQuery library -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+         <script src="./js/angular.js"></script>
+         
+         <script src="./js/app.js"></script> <script src="./js/home.js"></script>
+         <style>
+            a{
+                text-decoration: none;
+            }
+            button:hover{
+                -moz-transition:2s;
+                background-color: red;
+
+            }
+         </style>
+    </head>
+    <body data-ng-app="start">
+        <center>
+        <ui style="text-decoration: none;">
+            <li style="display: inline-block;padding: 40px;"><a ui-sref="home"><button>Home</button></a></li>
+            <li style="display: inline-block;padding: 40px;"><a ui-sref="about"><button>About</button></a></li>
+        </ui> 
+        </center>  
+        <div ui-view></div>
+        
+        <div data-ng-include="'footer.html'">
+        </div>
+
+    </body>
+</html>
